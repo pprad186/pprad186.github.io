@@ -1,0 +1,318 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #234;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+header .logo {
+    font-weight: bold;
+}
+header nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: #00aaff;
+}
+header nav a.active{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;background: #2d486d; 
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url(images/closet.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat, repeat
+}
+.hero h1 {
+    font-size: 2rem;
+}
+.hero .btn {
+    margin-top: 1rem;
+}
+
+/* Buttons */
+/* Prompt used in AI: "Button Recipe" */
+.btn {
+    display: inline-block;
+    background: #0077cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.btn:hover {
+    background: #005fa3;
+}
+
+/* Products */
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+.product p{
+    color: #cc1010;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+.product img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Why */
+.why {
+    padding: 2rem 6rem;
+    background: #fafafa;
+    text-align: center ;
+}
+
+/* About Page */
+.about-head {
+    text-align: center;
+    background-color: #e8e8e8;
+    padding: 4rem 2rem;
+}
+.story, .values, .team, .journey {
+    padding: 3rem 6rem;
+    text-align: center;
+}
+.story h2{
+    text-align: left;
+}
+.story{
+    text-align: justify;
+}
+.story img{
+    width: 100%; 
+    border: 1px solid #ddd;
+}
+.value-grid, .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* https://www.w3schools.com/cssref/pr_grid-template-columns.php */
+    gap: 1rem;
+}
+.journey ul{
+    text-align: left;
+    list-style: none;
+}
+.journey ul li{
+    padding: 10px;
+    background : url("images/journey.jpg") no-repeat left center;
+    background-size: 24px;
+    padding-left: 40px;
+}
+.team-grid span{
+    color: #777676;
+}
+.team-grid img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+/* Product Page */
+/* Breadcrumb */ 
+/* https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+.breadcrumb { 
+    font-size: 14px; 
+    margin: 15px 40px; 
+} 
+.breadcrumb a { 
+    color: #1a365d; 
+    text-decoration: none; 
+}
+
+/* Product Section */ 
+.product-container { 
+    display: flex; 
+    gap: 40px; 
+    padding: 20px 40px; 
+} 
+.product-images { 
+     flex: 1; 
+    } 
+.product-images .main-img { 
+    width: 100%; 
+    border: 1px solid #ddd; 
+} 
+.thumbs img { 
+    width: 80px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+} 
+.product-info { 
+    flex: 1; 
+} 
+.product-info h1 { 
+    margin-top: 0; 
+} 
+.product-info p img{
+    width: 100px;
+}
+.rating { 
+    color: #e67e22; 
+} 
+.price { 
+    font-size: 24px; 
+    color: #c00; 
+    font-weight: bold; 
+} 
+
+/* Options */ 
+.options button { 
+    border: 1px solid #ccc; 
+    background: #fff; 
+    padding: 5px 10px; 
+    margin: 5px; 
+    cursor: pointer; 
+} 
+.color-options { 
+    display: flex; 
+    gap: 10px; 
+    margin: 10px 0; 
+} 
+.color { width: 25px;
+    height: 25px; 
+    border: 1px solid #ccc; 
+    display: inline-block; 
+} 
+.beige { 
+    background: #f5f5dc;
+    cursor: pointer; 
+} 
+.navy { 
+    background: #1a365d;
+    cursor: pointer; 
+} 
+.red { 
+    background: #d00;
+    cursor: pointer; 
+} 
+.blue { 
+    background: #0047ab;
+    cursor: pointer; 
+} 
+input[type="number"] { 
+    width: 60px; 
+    margin: 10px 0; 
+} 
+.buttons { 
+    margin-top: 10px; 
+} 
+.cart-btn { 
+    background: #1a73e8; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin-right: 10px;
+    cursor: pointer; 
+} 
+.wishlist-btn { 
+    background: #eee; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+} 
+
+/* Tabs */ 
+.tabs { 
+    display: flex; 
+    margin: 20px 40px; 
+} 
+.tabs .tab { 
+    border: none; 
+    padding: 10px 20px; 
+    background: #eee; 
+    margin-right: 5px; 
+    cursor: pointer; 
+} 
+.tabs .active { 
+    background: #1a365d; 
+    color: white; 
+} 
+
+/* Details */ 
+.details { 
+    margin: 20px 40px; 
+} 
+.details table { 
+    width: 100%;
+    border-collapse: collapse; 
+} 
+.details td { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+} 
+
+/* Reviews */ 
+.reviews { 
+    margin: 20px 40px; 
+} 
+.reviews article { 
+    border-bottom: 1px solid #ddd; 
+    padding: 10px 0; 
+} 
+.reviews h3 {
+    font-size: 16px; 
+    margin: 0; 
+} 
+.reviews span { 
+    font-size: 12px; 
+    color: #666;
+    margin-left: 10px; 
+}
+
+/* Footer */
+footer {
+    background: #234;
+    color: #fff;
+    padding: 2rem 10rem;
+    text-align: center;
+}
+.footer-cols {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.footer-cols h4 {
+    margin-bottom: 0.5rem;
+}
+.footer-cols ul {
+    list-style: none;
+  
+}
+.footer-cols li {
+    margin: 0.5rem 0;
+}
+.footer-cols a {
+    color: #c4bfbf;
+    text-decoration: none;
+}
+.footer-cols a:hover {
+    text-decoration: underline;
+}

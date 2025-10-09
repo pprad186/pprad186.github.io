@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merino Wool Cable Knit Sweater</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">COMP3612 Assign 1</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Cart (0)</a>
+      </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+   <div class="breadcrumb">
+      <a href="index.html">Home</a> > <a href="#">Sweaters</a> > Merino Wool Cable Knit Sweater
+  </div>
+
+  <!-- Product Section -->
+  <main class="product-container">
+    <div class="product-images">
+      <img src="images/003-medium-front.png" alt="Merino Wool Sweater" class="main-img">
+      <div class="thumbs">
+        <img src="images/003-thumb-back.png" alt="Sweater side">
+        <img src="images/003-thumb-back-angle.png" alt="Sweater folded">
+        <img src="images/003-thumb-front-angle.png" alt="Sweater closeup">
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Merino Wool Cable Knit Sweater</h1>
+      <p class="rating"><img src="images/rating.jpg" alt="stars"> 4.8/5 - 127 reviews</p>
+      <!-- Took screenshots from the screen captures provided in the instruction folder -->
+      <p class="price">$119.99</p>
+      <p>
+        This luxurious cable knit sweater is made from 100% merino wool 
+        for exceptional warmth and softness. The classic cable pattern 
+        adds timeless texture and visual interest to this versatile 
+        piece. Natural temperature regulation properties make it perfect 
+        for transitional seasons.
+      </p><br>
+
+      <form action="https://www.randyconnolly.com/tests/process.php" method="post">
+        <label><strong>Size:</strong></label>
+        <div class="options">
+          <button type="button">XS</button>
+          <button type="button">S</button>
+          <button type="button">M</button>
+          <button type="button">L</button>
+          <button type="button">XL</button>
+          <button type="button">XXL</button>
+        </div><br>
+
+        <label><strong>Color:</strong></label>
+        <div class="color-options">
+          <span class="color beige"></span>
+          <span class="color navy"></span>
+          <span class="color red"></span>
+          <span class="color blue"></span>
+        </div>
+
+        <label for="quantity"><strong>Quantity:</strong></label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+        <br>
+        <div class="buttons">
+          <button type="submit" class="cart-btn">Add to Cart</button>
+          <button type="button" class="wishlist-btn">Add to Wishlist</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Tabs -->
+  <section class="tabs">
+    <button class="tab active">Description</button>
+    <button class="tab">Specifications</button>
+    <button class="tab">Care Instructions</button>
+  </section>
+
+  <!-- Product Details -->
+  <section class="details">
+    <h2>Product Details</h2>
+    <p>
+        This luxurious cable knit sweater is made from 100% merino wool 
+        for exceptional warmth and softness. The classic cable pattern 
+        adds timeless texture and visual interest to this versatile 
+        piece. Natural temperature regulation properties make it 
+        perfect for transitional seasons.
+    </p><br>
+    <table>
+        <thead><strong>Key Features:</strong></thead>
+        <tr><td><strong>Material</strong></td><td>100% premium merino wool</td></tr>
+        <tr><td><strong>Style</strong></td><td>Classic cable knit pattern</td></tr>
+        <tr><td><strong>Closures</strong></td><td>Ribbed cuffs and hem</td></tr>
+        <tr><td><strong>Care</strong></td><td>Dry clean recommended</td></tr>
+    </table>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <article>
+      <h3>Maria C. <img src="images/Maria.png" alt="m-stars"> <span>March 10, 2025</span></h3>
+      <!-- Took screenshots from the screen captures provided in the instruction folder -->
+      <p>Absolutely stunning sweater! The merino wool is incredibly soft and the cable knit detail is beautiful. Worth the investment.</p>
+    </article>
+    <article>
+      <h3>Robert H. <img src="images/Robert.png" alt="r-stars"> <span>March 5, 2025</span></h3>
+      <!-- Took screenshots from the screen captures provided in the instruction folder -->
+      <p>Bought this for our lead software engineer and she loves it. High quality construction and the wool feels luxurious. Fits true to size.</p>
+    </article>
+    <article>
+      <h3>Nina F. <img src="images/Nina.png" alt="n-stars"> <span>February 28, 2025</span></h3>
+      <!-- Took screenshots from the screen captures provided in the instruction folder -->
+      <p>Beautiful sweater but requires dry cleaning which is inconvenient. The quality is excellent though and it's very warm.</p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping Info</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2025 COMP3612. All rights reserved.</p>
+  </footer>
+</body>
+</html>
